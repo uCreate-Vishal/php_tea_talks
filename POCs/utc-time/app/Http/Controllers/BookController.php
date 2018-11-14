@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Book;
 use Illuminate\Http\Request;
+use App\Http\Requests\AddBooksRequest;
 
 class BookController extends Controller
 {
@@ -34,16 +35,9 @@ class BookController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(AddBooksRequest $request)
     {
-        $input = $request->all();
-        $this->validate($request, [
-            'name' => 'required|max:255',
-            'published' => 'required|date',
-            'remarks' => 'required',
-             
-        ]);
-
+       
         $input = $request->all();
 
         Book::create($input);
