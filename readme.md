@@ -22,7 +22,7 @@ feel free to open a Pull Request with point added to the list.
 ## Table of contents
 
 * [Laravel-specific tips, tricks and rules]
-  - [Use Laravel pre-defined function](https://github.com/uCreate-Vishal/php_tea_talks/examples-of-predefined-functions/README.md#examples-of-predefined-functions)
+  - [Use Laravel pre-defined function](https://github.com/uCreate-Vishal/php_tea_talks/tree/master/examples-of-predefined-functions)
 
 
 
