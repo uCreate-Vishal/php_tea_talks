@@ -13,5 +13,18 @@ To use an existing POC (from the POCs folder), go to the POC of your choice and 
 
 > ```composer install```
 
+# Coding Guidelines
+The set of rules that we follow when coding and performing code reviews of someone else's code.
+It should be considered as a knowledge base, that anyone can contribute to.
+If you spot a bad practice during the code review, and it is possible to describe it in generic way,
+feel free to open a Pull Request with point added to the list.
+
+## Table of contents
+
+* [Laravel-specific tips, tricks and rules]
+  - [Use Laravel pre-defined function](https://github.com/uCreate-Vishal/php_tea_talks/tree/master/examples-of-predefined-functions)
+
+
+
 Any followup instructions would be available in the project specific README file
 
