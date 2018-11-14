@@ -220,18 +220,4 @@ public function author()
 ```
 
 
-<div align="right">
-    <b><a href="#top">↥ back to top</a></b>
-</div>
-
 <hr>
-
-<div align="right">
-<a href="../summary/README.md"><b>NEXT:</b> Summary</a>
-</div>
-<div align="center">
-<b><a href="../README.md">INDEX</a></b>
-</div>
-<div align="left">
-<a href="../symfony-specific-tips-tricks-and-rules/README.md"><b>PREVIOUS:</b> Symfony-specific tips, tricks and rules</a>
-</div>
