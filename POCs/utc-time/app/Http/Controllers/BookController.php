@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Book;
 use Illuminate\Http\Request;
 use App\Http\Requests\AddBooksRequest;
+use Session;
+use Auth;
 
 class BookController extends Controller
 {
@@ -15,7 +17,10 @@ class BookController extends Controller
      */
     public function index()
     {
-        //
+        $user = Auth::user();
+        $time_zone = $user->time_zone;
+        $books = Book::all();
+        return view('books.list', compact('time_zone', 'books'));
     }
 
     /**
@@ -44,7 +49,7 @@ class BookController extends Controller
 
         Session::flash('status', 'Book successfully added!');
 
-        return redirect()->back();
+        return redirect('/books');
     }
 
     /**
@@ -55,7 +60,7 @@ class BookController extends Controller
      */
     public function show(Book $book)
     {
-        //
+        print_r(Auth::User);
     }
 
     /**

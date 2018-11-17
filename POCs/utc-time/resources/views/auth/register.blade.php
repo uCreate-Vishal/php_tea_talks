@@ -60,6 +60,11 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
                         </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <input id="time_zone" type="hidden" class="form-control" name="time_zone" >
+                            </div>
+                        </div>
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
@@ -74,4 +79,8 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    var tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    document.getElementById('time_zone').value = tz;    
+</script>
 @endsection

@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel Demo App
+                    Demo: UTC-TIME
                 </div>
              </div>
         </div>

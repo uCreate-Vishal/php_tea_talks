@@ -20,3 +20,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 //Route::get('/book/create', 'BookController@create')->name('create-book');
 Route::resource('books', 'BookController');
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');

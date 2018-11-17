@@ -43,8 +43,12 @@
                                 </div>
                            
                                 <div class="col-md-3">
-                                    @if($book->published)
-                                    <p>{{date('d/m/Y',strtotime($book->published_at))}}</p>
+                                    @php
+                                        $date = new DateTime($book->published_at);
+                                        $date->setTimezone(new DateTimeZone($time_zone));
+                                    @endphp
+                                    @if($book->published_at)
+                                    <p>{{$date->format('d-m-Y H:i:s')}}</p>
                                     @endif
                                 </div>
                                 <div class="col-md-4">

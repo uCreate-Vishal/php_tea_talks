@@ -35,10 +35,8 @@
                                 {!! Form::text('name', null, ['class' => 'form-control']) !!}
                             </div>
                             <div class="form-group">
-                                {!! Form::label('published', 'Publish date:', ['class' => 'control-label']) !!}
-                                {!! Form::date('published', null, ['class' => 'form-control']) !!}
-                                
-                                <input size="16" type="text" value="" readonly class="form_datetime">
+                                {!! Form::label('published_at', 'Publish date:', ['class' => 'control-label']) !!}
+                                {!! Form::text('published_at', null, ['class' => 'form-control', 'placeholder'=>'1970-01-01 00:00:00']) !!}
                                 </div>
 
                             <div class="form-group">

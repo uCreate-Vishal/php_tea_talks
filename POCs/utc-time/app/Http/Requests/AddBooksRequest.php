@@ -25,7 +25,7 @@ class AddBooksRequest extends FormRequest
     {
        return [
             'name' => 'required|max:255',
-            'published' => 'required|date',
+            'published_at' => 'required|date',
             'remarks' => 'required',
              
         ];
@@ -35,7 +35,7 @@ class AddBooksRequest extends FormRequest
         return [
             'name.required' => 'Please enter book name.',
             'name.max' => 'Book name should not be greater than 255 character.',
-            'published.required'=>'Please enter published date',
+            'published_at.required'=>'Please enter published date',
             'remarks.required'=>'Please enter remarks'
         ];
     }
