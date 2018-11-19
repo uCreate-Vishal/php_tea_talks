@@ -17,9 +17,9 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/bootstrap-datetimepicker.min.css') }}" rel="stylesheet">
+ 
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -29,6 +29,7 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -79,21 +80,6 @@
             @yield('content')
         </main>
     </div>
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="{{url('js/bootstrap.min.js')}}"></script>
-    <script src="{{url('js/bootstrap-datetimepicker.min.js')}}"></script>
-    <script type="text/javascript"> 
-       //$(".form_datetime").datetimepicker({format: 'yyyy-mm-dd hh:ii'});
-         $('.form_datetime').datetimepicker({
-         weekStart: 1,
-        todayBtn:  1,
-		autoclose: 1,
-		todayHighlight: 1,
-		startView: 2,
-		forceParse: 0,
-        showMeridian: 1
-    });
-    </script> 
-    
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>    
 </body>
 </html>

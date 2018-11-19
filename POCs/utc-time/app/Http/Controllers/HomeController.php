@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
+use App\Book;
 
 class HomeController extends Controller
 {
@@ -22,9 +24,10 @@ class HomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {   
-        $books = \App\Book::all();
-
-     return view('home')->withBooks($books);  
+    {
+        $user = Auth::user();
+        $time_zone = $user->time_zone;
+        $books = Book::all();
+        return view('books.list', compact('books', 'time_zone'));
     }
 }

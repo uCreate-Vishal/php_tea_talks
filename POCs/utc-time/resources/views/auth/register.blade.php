@@ -60,6 +60,11 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
                         </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <input id="time_zone" type="hidden" class="form-control" name="time_zone" >
+                            </div>
+                        </div>
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
@@ -74,4 +79,15 @@
         </div>
     </div>
 </div>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js">
+</script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jstimezonedetect/1.0.4/jstz.min.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+    var tz = jstz.determine(); // Determines the time zone of the browser client
+    var timezone = tz.name(); //'Asia/Kolhata' for Indian Time.
+    document.getElementById('time_zone').value = timezone;
+});
+</script>
 @endsection
