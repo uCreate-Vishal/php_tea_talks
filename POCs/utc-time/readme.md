@@ -10,8 +10,54 @@ Also this project shows how we can use Request validations for validating reques
 - Framework: Laravel ( 5.7.* )
 - Database: PostgreSql
 
+## How to install project on local
+  
+    Open CLI and run following commands to set up at local:
+   - **Clone the project**
+        > 
+            git clone https://github.com/uCreate-Vishal/php_tea_talks.git
 
-## Steps performed 
+   - **Set permissions**
+       >
+            sudo chmod -R 777 { project-storage-path }
+            sudo chmod -R 777 { project-bootstrap-path }
+
+   - **Go to project directory**
+       >
+            cd /php_tea_talks/POCs/utc-time        
+
+ - **Install the dependencies**    
+ >
+           composer install
+  
+
+
+## Database installation
+- **How to install postgresql ( Ubuntu )**
+    >
+        sudo apt-get install postgresql postgresql-contrib
+- **Which UI being used to connect to DB**
+    >
+        pgadmin
+- **Create  database**
+    >
+         1. login to pgsql
+          sudo psql -h localhost -U postgres    
+           2. create database utc-time;
+
+## Post Installation steps
+ - **Run database migrations**
+    >
+        php artisan migrate
+
+- **Start server**
+    >
+        php artisan serve
+        The API will be running on localhost:8000 now
+
+
+
+## Steps to test time  
 1. User signup 
   - When user signs up to platform local timezone of user is detected and stored to db.
 
