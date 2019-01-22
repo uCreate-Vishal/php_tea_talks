@@ -23,7 +23,7 @@
 ### Run App
 > php artisan serve
 
-##Run Demo
+## Run Demo
 As this POC is only build for APIs so to run demostration either you setup any frontend API integration OR any API Testing tool like [Postman](https://learning.getpostman.com/getting-started/).
 
 As example there is an API endpoint available: 
