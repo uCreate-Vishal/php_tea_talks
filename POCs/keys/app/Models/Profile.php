@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Profile extends Model
+{
+    protected $table = 'profile';
+    protected $guarded = [];
+    protected $fillable = [
+        'profile_id', 'user_id'
+    ];
+}
