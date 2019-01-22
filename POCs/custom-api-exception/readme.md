@@ -1,5 +1,5 @@
 ## About Custom API Exception
- This POC project/app is a demostration for Using custom exception handling for cleaner code for API development.
+ This POC project/app is a demonstration for Using custom exception handling for cleaner code for API development.
 
 ## Why?
 
@@ -24,7 +24,7 @@
 > php artisan serve
 
 ## Run Demo
-As this POC is only build for APIs so to run demostration either you setup any frontend API integration OR any API Testing tool like [Postman](https://learning.getpostman.com/getting-started/).
+As this POC is only build for APIs so to run demonstration either you setup any frontend API integration OR any API Testing tool like [Postman](https://learning.getpostman.com/getting-started/).
 
 As example there is an API endpoint available: 
 > GET {APP_URL}/api/show-api-exception
