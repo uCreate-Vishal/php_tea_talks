@@ -15,3 +15,5 @@ use Illuminate\Http\Request;
 Route::middleware('api')->get('/', 'ApiController@index');
 
 Route::middleware('api')->post('/show', 'ApiController@showKeyword');
+
+Route::middleware('api')->get('/show-api-exception', 'ApiController@showCustomException');

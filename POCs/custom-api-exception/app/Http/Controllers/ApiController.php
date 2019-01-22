@@ -21,6 +21,11 @@ class ApiController extends Controller
         );
     }
 
+    public function showCustomException()
+    {
+        $this->showBadRequestError(['exception' => 'ApiException'], __('messages.error.api_exception'), 400);
+    }
+
     public function showKeyword(Request $request)
     {
         $this->input = $request->all();
